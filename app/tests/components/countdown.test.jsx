@@ -25,7 +25,7 @@ describe('Countdown', () => {
       },1001);
     });
 
-    it('should set state to started and countdown', (done) => {
+    it('should stop the countdown when the count reach 0', (done) => {
       var countdown = TestUtils.renderIntoDocument(<Countdown/>)
       countdown.handleSetCountdown(1);
 
